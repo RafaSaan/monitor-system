@@ -1,12 +1,10 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
+import dashboard from "../modules/dashboard/store";
+import auth from "../modules/auth/store";
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
-  }
-})
+    auth,
+    dashboard,
+  },
+});
